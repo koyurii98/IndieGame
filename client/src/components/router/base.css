@@ -53,10 +53,6 @@
     color: #b4b4b5;
 }
 
-.base-loginLink {
-    font-family: NanumSquareRoundR;
-}
-
 .base-main {
     background-color: #2d2d2d;
     height: 100%;
@@ -64,5 +60,5 @@
 
 .base-footer {
     background-color: #262626;
-    height: 7%;
+    height: 10%;
 }
