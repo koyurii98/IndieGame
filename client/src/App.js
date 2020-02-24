@@ -1,5 +1,6 @@
 import React from 'react';
 import Index from './components/router/index'
+import './App.css'
 
 function App() {
   return (
