@@ -18,7 +18,7 @@
 }
 
 .base-loginLink {
-    font-family: NanumSquareRoundR;
+    font-family: "나눔스퀘어",NanumSquareRoundR;
     font-size: 12px;
     padding-left: 20px;
     text-decoration: none;
@@ -28,7 +28,7 @@
 .base-cate {
     display: inline-flex;
     flex-direction: row;
-    font-family: Typo_SsangmunDong_B;
+    font-family: "타이포_쌍문동",Typo_SsangmunDong_B;
     height: 58px;
     padding-left: 349px;
 }
