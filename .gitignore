@@ -1,0 +1,5 @@
+# server gitIgnore
+
+/node_modules
+/package-lock.json
+/server/bin/config.js
