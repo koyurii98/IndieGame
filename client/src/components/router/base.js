@@ -27,6 +27,9 @@ class Base extends React.Component {
                         <Route exact path="/"> 
                             <Main></Main>
                         </Route>
+                        <Route path="/pc"> 
+
+                        </Route>
                     </div>
                     <div className="base-footer">
                         <span>footer</span>
