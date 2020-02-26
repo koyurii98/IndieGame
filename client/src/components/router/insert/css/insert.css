@@ -44,7 +44,7 @@ input{
     resize: none;
     border: none;
     color: #b4b4b5;
-    height:32px;
+    height:33px;
     width: 247px;
     margin-top: 5px;
     font-size:14px;
@@ -75,9 +75,19 @@ input{
     background-color:#7966a3;
     border: none;
     width: 91px;
-    height:32px;
+    height:33px;
     margin-left: 4px;
     font-family: "나눔스퀘어",NanumSquareR;
     font-size: 13px;
     color: #b4b4b5;
+}
+.insert-btn{
+    width: 247px;
+    height:33px;
+    background-color:#7966a3;
+    border: none;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 16px;
+    color: #b4b4b5;
+    font-weight: bold;
 }

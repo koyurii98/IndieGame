@@ -47,7 +47,9 @@ class Insert extends React.Component {
                             <input type="text"className="insert-input-phoneck"></input>
                             <button className="insert-phonech-btn">인증번호받기</button>
                         </div>
-
+                        <div className="insert-box-content">
+                            <button className="insert-btn">가입하기</button>
+                        </div>
                     </div>
                 </div>
             </div>
