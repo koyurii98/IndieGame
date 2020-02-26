@@ -24,8 +24,6 @@
     padding-right: 11px;
 }
 
-
-
 .insert-titleLine {
     width: 100%;
     height: 1px;
@@ -38,8 +36,10 @@
     padding-bottom: 55px;
     display: inline-flex;
     flex-direction: row;
+    justify-content: center;
 }
-input{
+
+input {
     background-color: #262626;
     resize: none;
     border: none;
@@ -48,15 +48,13 @@ input{
     width: 247px;
     margin-top: 5px;
     font-size:14px;
-  
-
 }
 .insert-box{
     width: 249px;
-  height: 751px;
-  object-fit: contain;
-
+    height: 751px;
+    object-fit: contain;
 }
+
 .insert-box-content{
     width: 247px;
     height: 74px;
@@ -64,9 +62,11 @@ input{
     color:#b4b4b5;
     font-size: 16px;
 }
+
 .insert-input-usernumber{
     width: 115px;
 }
+
 .insert-input-phoneck{
     width: 152px;
 }

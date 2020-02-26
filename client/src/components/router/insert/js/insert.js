@@ -9,7 +9,7 @@ class Insert extends React.Component {
                     <div className="insert-titleText">
                         <span className="insert-Text">회원가입</span>
                     </div>
-                <div className="insert-titleLine"></div>
+                    <div className="insert-titleLine"></div>
                 </div>
                 <div className="insert-contentsDiv">
                     <div className="insert-box">
