@@ -50,6 +50,7 @@ li {
 .main-bodyDiv {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .main-bodylines {
@@ -61,18 +62,30 @@ li {
 
 .main-bodyText {
     font-family: NanumSquareR;
-    font-size: 21px;
+    font-size: 18px;
     color: #cfcfcf;
+    font-weight: bold;
 }
-
+.main-bodyText-mobile {
+    font-family: NanumSquareR;
+    font-size: 18px;
+    color: #cfcfcf;
+    font-weight: bold;
+}
 .main-bodyline {
     background-color: #cfcfcf;
     height: 1px;
-    width: 85.5%;
+    width: 90%;
     margin-left: 8px;
     align-self: center;
 }
-
+.main-bodyline-mobile {
+    background-color: #cfcfcf;
+    height: 1px;
+    width: 86%;
+    margin-left: 6px;
+    align-self: center;
+}
 @media all and (max-width : 1150px) {
     .main-bodylines {
         flex-direction: column;

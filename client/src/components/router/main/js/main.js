@@ -23,7 +23,7 @@ class Main extends React.Component {
                 </div>
                 <div className="main-bodyDiv">
                     <div className="main-bodylines">
-                        <div className="main-bodyText">모바일 인기게임</div>
+                        <div className="main-bodyText">PC 인기게임</div>
                         <div className="main-bodyline"></div>
                     </div>
                     <div className="main-bodyBoxs">
@@ -34,7 +34,7 @@ class Main extends React.Component {
                         <div className="main-bodyBox"></div>
                     </div>
                     <div className="main-bodylines">
-                        <div className="main-bodyText">모바일 신작게임</div>
+                        <div className="main-bodyText">PC 신작게임</div>
                         <div className="main-bodyline"></div>
                     </div>
                     <div className="main-bodyBoxs">
@@ -44,6 +44,30 @@ class Main extends React.Component {
                         <div className="main-bodyBox"></div>
                         <div className="main-bodyBox"></div>
                     </div>
+                    <div className="main-bodylines">
+                        <div className="main-bodyText-mobile">MOBILE 인기게임</div>
+                        <div className="main-bodyline-mobile"></div>
+                    </div>
+                    <div className="main-bodyBoxs">
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                    </div>
+                    <div className="main-bodylines">
+                        <div className="main-bodyText-mobile">MOBILE 신작게임</div>
+                        <div className="main-bodyline-mobile"></div>
+                    </div>
+                    <div className="main-bodyBoxs">
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                        <div className="main-bodyBox"></div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         );

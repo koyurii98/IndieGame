@@ -17,25 +17,25 @@ class Pc extends React.Component {
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                     </div>
@@ -43,25 +43,25 @@ class Pc extends React.Component {
                     <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                 <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
-                                <span>GAME TITLE</span>
-                                <span>평점 4.8</span>
-                                <span>카테고리:전투,멀티</span>
+                                <span className="pc-box-title">GAME TITLE</span>
+                                <span className="pc-box-score">평점 4.8</span>
+                                <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>
                         </div>
                     </div>
