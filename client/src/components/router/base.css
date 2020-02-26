@@ -1,20 +1,36 @@
-.base-div {
-    height: 100%;
-}
-
 .base-header {
     background-color: #2d2d2d;
     height: 77px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.base-lines {
+    position: absolute;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.192);
+    width: 100%;
+    margin-top: 17px;
+}
+
+.base-headerDiv {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 
 .base-login {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     height: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
-    padding-left: 1381px;
+}
+
+@media all and (max-width : 1200px) {
+    .base-login {
+        justify-content: center;
+    }
 }
 
 .base-loginLink {
@@ -25,12 +41,22 @@
     color: #dfdfdf;
 }
 
+.base-loginLink:hover {
+    color: #ffffff;
+}
+
 .base-cate {
     display: inline-flex;
     flex-direction: row;
     font-family: "타이포_쌍문동",Typo_SsangmunDong_B;
     height: 58px;
-    padding-left: 349px;
+    justify-content: flex-start;
+}
+
+@media all and (max-width : 1200px) {
+    .base-cate {
+        justify-content: center;
+    }
 }
 
 .base-logo {
@@ -49,17 +75,35 @@
     color: #7c7c7c;
 }
 
-.base-tags-hover {
+@media all and (max-width : 750px) {
+    .base-logo {
+        font-size: 31px;
+    }
+    .base-tags {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+.base-tags:hover {
     color: #b4b4b5;
 }
 
 .base-main {
     background-color: #2d2d2d;
     padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.base-mainDiv {
+    width: 1129px;
     height: 100%;
+    padding-bottom: 6px;
 }
 
 .base-footer {
     background-color: #262626;
-    height: 10%;
+    height: 163px;
 }
