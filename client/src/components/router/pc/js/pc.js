@@ -13,7 +13,7 @@ class Pc extends React.Component {
                     <div className="pc-titleLine"></div>
                 </div>
                 <div className="pc-contentsDiv">
-                    <div className="pc-topBoxs">
+                    <div className="pc-mainBoxs">
                         <div className="pc-box">
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
@@ -34,16 +34,6 @@ class Pc extends React.Component {
                             <div className="pc-shumnailDiv"></div>
                             <div className="pc-boxTextDiv">
                                 <span className="pc-box-title">GAME TITLE</span>
-                                <span className="pc-box-score">평점 4.8</span>
-                                <span className="pc-box-cate">카테고리:전투,멀티</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="pc-bottomBoxs">
-                    <div className="pc-box">
-                            <div className="pc-shumnailDiv"></div>
-                            <div className="pc-boxTextDiv">
-                                 <span className="pc-box-title">GAME TITLE</span>
                                 <span className="pc-box-score">평점 4.8</span>
                                 <span className="pc-box-cate">카테고리:전투,멀티</span>
                             </div>

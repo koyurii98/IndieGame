@@ -1,6 +1,7 @@
 .pc-mainDiv {
     width: 100%;
-   
+    display: flex;
+    flex-direction: column;
 }
 
 .pc-titleDiv {
@@ -37,21 +38,19 @@
 }
 
 .pc-contentsDiv {
+    width: 100%;
     padding-top: 55px;
     padding-bottom: 55px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: center;
 }
 
-.pc-topBoxs {
+.pc-mainBoxs {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-}
-
-.pc-bottomBoxs {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .pc-box {
@@ -60,10 +59,12 @@
     display:  flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
     margin-bottom: 24px;
     background-color: #262626;
 }
+
 .pc-box-title{
     color: #868686;
     font-family: "나눔스퀘어",NanumSquareR;
@@ -71,6 +72,7 @@
     font-weight: bold;
     
 }
+
 .pc-box-score ,.pc-box-cate{
     color: #868686;
     font-family: "나눔스퀘어",NanumSquareR;
