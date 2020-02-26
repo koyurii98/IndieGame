@@ -1,0 +1,83 @@
+.insert-mainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.insert-titleDiv {
+    height: 33px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.insert-titleText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.insert-Text {
+    font-family:"타이포_쌍문동",Typo_SsangmunDong_B;
+    font-size: 24px;
+    color: #b4b4b5;
+    padding-right: 11px;
+}
+
+
+
+.insert-titleLine {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.insert-contentsDiv {
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: inline-flex;
+    flex-direction: row;
+}
+input{
+    background-color: #262626;
+    resize: none;
+    border: none;
+    color: #b4b4b5;
+    height:32px;
+    width: 247px;
+    margin-top: 5px;
+    font-size:14px;
+  
+
+}
+.insert-box{
+    width: 249px;
+  height: 751px;
+  object-fit: contain;
+
+}
+.insert-box-content{
+    width: 247px;
+    height: 74px;
+    object-fit: contain;
+    color:#b4b4b5;
+    font-size: 16px;
+}
+.insert-input-usernumber{
+    width: 115px;
+}
+.insert-input-phoneck{
+    width: 152px;
+}
+
+.insert-phonech-btn{
+    background-color:#7966a3;
+    border: none;
+    width: 91px;
+    height:32px;
+    margin-left: 4px;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 13px;
+    color: #b4b4b5;
+}
