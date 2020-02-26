@@ -1,0 +1,109 @@
+.main-mainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-titleDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-boxDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-leftBox {
+    border: 1px solid white;
+    width: 303px;
+    height: 212px;
+}
+
+.main-centerBox {
+    border: 1px solid white;
+    width: 389px;
+    height: 271px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.main-rightBox {
+    border: 1px solid white;
+    width: 303px;
+    height: 212px;
+}
+
+.main-ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.main-bodyDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.main-bodylines {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
+
+.main-bodyText {
+    font-family: NanumSquareR;
+    font-size: 18px;
+    color: #cfcfcf;
+    font-weight: bold;
+}
+.main-bodyText-mobile {
+    font-family: NanumSquareR;
+    font-size: 18px;
+    color: #cfcfcf;
+    font-weight: bold;
+}
+.main-bodyline {
+    background-color: #cfcfcf;
+    height: 1px;
+    width: 90%;
+    margin-left: 8px;
+    align-self: center;
+}
+.main-bodyline-mobile {
+    background-color: #cfcfcf;
+    height: 1px;
+    width: 86%;
+    margin-left: 6px;
+    align-self: center;
+}
+@media all and (max-width : 1150px) {
+    .main-bodylines {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-bodyText {
+        font-size: 12px;
+    }
+}
+
+.main-bodyBoxs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-bodyBox {
+    border: 1px solid white;
+    width: 196px;
+    height: 161px;
+}

@@ -1,0 +1,99 @@
+.pc-mainDiv {
+    width: 100%;
+   
+}
+
+.pc-titleDiv {
+    height: 33px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-titleText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pc-pcText {
+    font-family:"타이포_쌍문동",Typo_SsangmunDong_B;
+    font-size: 24px;
+    color: #b4b4b5;
+    padding-right: 11px;
+}
+
+.pc-cateText {
+    font-family: NanumSquareR;
+    font-size: 19px;
+    color: #999999;
+    font-weight: bold;
+}
+
+.pc-titleLine {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.185)
+}
+
+.pc-contentsDiv {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-topBoxs {
+    display: flex;
+    flex-direction: row;
+}
+
+.pc-bottomBoxs {
+    display: flex;
+    flex-direction: row;
+}
+
+.pc-box {
+    width: 335px;
+    height: 296px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background-color: #262626;
+}
+.pc-box-title{
+    color: #868686;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 18px; 
+    font-weight: bold;
+    
+}
+.pc-box-score ,.pc-box-cate{
+    color: #868686;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 15px; 
+}
+
+.pc-shumnailDiv {
+    margin-top: 8px;
+    margin-left: 11px;
+    margin-right: 11px;
+    display: flex;
+    flex-direction: column;
+    width: 313px;
+    height: 204px;
+    background-color: #909090;
+}
+
+.pc-boxTextDiv {
+    width: 313px;
+    height: 60px;
+    display: flex;
+    margin-left: 11px;
+    margin-top: 2px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
