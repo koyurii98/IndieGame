@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Main from './main/js/main';
 import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
+import Detail from './detail/js/detail';
 
 class Base extends React.Component {
     render() {
@@ -38,6 +39,9 @@ class Base extends React.Component {
                             </Route>
                             <Route path="/insert"> 
                                 <Insert></Insert>
+                            </Route>
+                            <Route path="/gameView"> 
+                                <Detail></Detail>
                             </Route>
                         </div>
                     </div>

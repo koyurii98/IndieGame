@@ -32,13 +32,14 @@
 .pc-titleLine {
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.185)
+    background-color: rgba(255, 255, 255, 0.185);
 }
 
 .pc-contentsDiv {
     padding-top: 55px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .pc-topBoxs {
