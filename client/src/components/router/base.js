@@ -7,15 +7,55 @@ import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
 
 class Base extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            loginBtn : false,
+        }
+    }
+    clickLoginBtn() {
+        const { loginBtn } = this.state;
+        if(!loginBtn){
+            this.setState({
+                loginBtn : true
+            })
+        } else {
+            this.setState({
+                loginBtn : false
+            })
+        }
+    }
     render() {
+        const { loginBtn } = this.state;
         return (
             <div className="base-div">
                 <Router>
+                    {
+                        loginBtn && 
+                        <div className="base-loginBackDiv">
+                            <div className="base-loginPop">
+                                <div className="base-loginClose"><span className="base-loginCloseText" onClick={this.clickLoginBtn.bind(this)}>X</span></div>
+                                <div className="base-loginLogin"><span className="base-loginLoginText">LOGIN</span></div>
+                                <div className="base-loginPopMini">
+                                    <input type="text" className="login-id" placeholder="아이디"></input>
+                                    <input type="password" className="login-pass" placeholder="비밀번호"></input>
+                                    <button className="login-btn"><span className="login-btnText">로그인</span></button>
+                                    <div className="login-etc">
+                                        <div className="login-etc-etc">
+                                            <input type="checkbox" className="login-ch"></input>
+                                            <span className="login-etcSave">아이디저장</span>
+                                        </div>
+                                        <Link className="login-etcIdPass">아이디/비밀번호 찾기</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
                     <div className="base-header">
                         <div className="base-lines"></div>
                         <div className="base-headerDiv">
                             <div className="base-login">
-                                <Link to="/login" className="base-loginLink">로그인</Link>
+                                <a href="#" className="base-loginLink" onClick={this.clickLoginBtn.bind(this)}>로그인</a>
                                 <Link to="/insert" className="base-loginLink">회원가입</Link>
                                 <Link to="/qanda" className="base-loginLink">고객센터</Link>
                             </div>
