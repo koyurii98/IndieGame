@@ -3,7 +3,6 @@ import '../css/baseupload.css';
 
 class Resource extends React.Component {
     render () {
-
         return (
             <div className="upload-resource-row">
                 <div className="upload-resource-content-col">
@@ -31,10 +30,6 @@ class Resource extends React.Component {
                         <span className="upload-img-add">+</span>
                     </div>
                     </div>
-                </div>
-                <div className="upload-buttons">
-                    <button className="Previousbtn">이전</button>
-                    <button className="nextbtn">다음</button>
                 </div>
             </div>
         )
