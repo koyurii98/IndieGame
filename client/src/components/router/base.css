@@ -211,6 +211,13 @@
     font-size: 18px;
     color: #7c7c7c;
 }
+.base-tags-line{
+    font-weight: bold;
+    color: #7c7c7c;
+    margin-top: 26px;
+    margin-left: 40px;
+    font-family: "나눔스퀘어",NanumSquareRoundR;
+}
 
 @media all and (max-width : 750px) {
     .base-logo {

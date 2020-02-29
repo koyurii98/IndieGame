@@ -1,0 +1,254 @@
+.upload-mainDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-titleDiv {
+    height: 33px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-titleText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload-Text {
+    font-family:"타이포_쌍문동",Typo_SsangmunDong_B;
+    font-size: 24px;
+    color: #b4b4b5;
+    padding-right: 11px;
+}
+
+.upload-titleLine {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.upload-col{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.upload-contentsDiv {
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.upload-content-title{
+    height: 30px;
+    font-size: 22px;
+    color:#6c6c6c;
+    flex-direction: row;
+    display: inline-flex;
+}
+.upload-resource, .upload-info,.upload-upload {
+    margin-right: 50px;
+}
+.upload-game{
+    color:#b4b4b5;
+    margin-right: 60px;
+}
+
+.upload-next{
+    margin-left: 60px;
+}
+.upload-game-content{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 55px;
+
+}
+.upload-game-box{
+    border-radius: 10px;
+    border: #b4b4b5 dashed 3.2px;
+    width: 690px;
+    height: 350px;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #2d2d2d;
+    
+}
+.upload-game-box-result{
+    width: 329px;
+    height: 150px;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 14px;
+    color: #b4b4b5;
+}
+.upload-game-btn{
+    margin-top: 100px;
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 91px;
+    height: 40px;
+}
+.upload-buttons{
+    padding-top:55px;    
+    padding-bottom:55px;  
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.nextbtn{
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 60px;
+    height: 40px;
+    
+
+}
+.upload-nextbtn{
+    margin-left: 1069px;
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 60px;
+    height: 40px;
+}
+.upload-Previousbtn{
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 60px;
+    height: 40px;
+
+}
+.upload-resource-thumbnail,.upload-resource-video,.upload-resource-img{
+    padding-bottom: 30px;
+}
+.upload-resource-content-col{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 18%;
+}
+.upload-img-row{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.uplaod-resource-thumbnail-title,.upload-resource-video-title,.upload-resource-img-title{
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 18px;
+    color: #b4b4b5;
+    margin: 4px;
+}
+
+.upload-thumbnail-box,.upload-video-box,.upload-img-box{
+    border-radius: 10px;
+    border: #b4b4b5 dashed 3.2px;
+    width: 690px;
+    height: 125px;
+    text-align: center;
+    padding-top: 55px;
+    background-color: #2d2d2d;
+    
+}
+.upload-thumbnail-box-result,.upload-video-box-result,.upload-img-box-result{
+    width: 329px;
+    height: 150px;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 14px;
+    color: #b4b4b5;
+}
+.upload-thumbnail-btn,.upload-video-btn,.upload-img-btn{
+    margin-top: 15px;
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 91px;
+    height: 40px;
+}
+.upload-img-add{
+   width: 120px;
+    text-align: center;
+    margin-top: 50px;
+    color:  #b4b4b5;
+    font-weight: bolder;
+    font-size: 52px;
+}
+
+.Previousbtn{
+    background:#7966a3;
+    color:#b4b4b5;
+    text-align: center;
+    border: none;
+    width: 60px;
+    height: 40px;
+    margin-right: 1009px;
+}
+
+
+.upload-info-content{
+    display: inline-flex;
+    padding-bottom: 55px;
+    padding-left: 75px;
+    margin-left:30px;
+
+}
+.info-title ,.upload-info-write{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-title-text{
+    font-size: 15px;
+    margin-bottom: 32px;
+    margin-right: 50px;
+    font-family: "나눔스퀘어",NanumSquareR;
+    color: #b4b4b5;
+}
+.info-input{
+    width: 200px;
+    height: 35px;
+    margin-bottom: 10px;
+    
+}
+.info-checkbox-all{
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.checkbox{
+    width: 15px;
+    height: 15px;
+}
+.info-checkbox{
+    height: 20px;
+    margin-bottom: 20px;
+}
+.check-text{
+    font-family: "나눔스퀘어",NanumSquareR;
+    color: #b4b4b5;
+    text-align:center;
+}
+.info-textarea{
+    width: 700px;
+    height: 100px;
+    background-color: #262626;
+    border: none;
+    resize: none;
+    margin-top:5px;
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+

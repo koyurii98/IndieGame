@@ -5,6 +5,8 @@ import Main from './main/js/main';
 import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
+import Baseupload from './game_upload/js/Base-upload';
+
 
 class Base extends React.Component {
     constructor(props){
@@ -66,6 +68,8 @@ class Base extends React.Component {
                                 <Link to="/new" className="base-tags">NEW</Link>
                                 <Link to="/pc" className="base-tags">PC</Link>
                                 <Link to="/mobile" className="base-tags">MOBILE</Link>
+                                <span className="base-tags-line">|</span>
+                                <Link to="/upload" className="base-tags">GAME UPLOAD</Link>
                             </div>
                         </div>
                     </div>
@@ -83,6 +87,11 @@ class Base extends React.Component {
                             <Route path="/gameView"> 
                                 <Detail></Detail>
                             </Route>
+                            <Route path="/upload">
+                                <Baseupload></Baseupload>
+                            </Route>
+
+                          
                         </div>
                     </div>
                     <div className="base-footer">

@@ -175,6 +175,7 @@
     resize: none;
     border: none;
     color: #b4b4b5;
+    overflow: hidden;
 }
 
 .detail-textButton {
