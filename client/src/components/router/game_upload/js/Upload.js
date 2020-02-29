@@ -14,9 +14,6 @@ class Upload extends React.Component {
                     </div>
                 </div>
                 </div>
-                <div className="upload-buttons">
-                    <button className="upload-nextbtn">다음</button>
-                </div>
             </div>
         )
     }

@@ -5,7 +5,7 @@ import Main from './main/js/main';
 import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
-import Baseupload from './game_upload/js/Base-upload';
+import Baseupload from './game_upload/js/Base_upload';
 
 
 class Base extends React.Component {
@@ -90,8 +90,6 @@ class Base extends React.Component {
                             <Route path="/upload">
                                 <Baseupload></Baseupload>
                             </Route>
-
-                          
                         </div>
                     </div>
                     <div className="base-footer">
