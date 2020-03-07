@@ -299,3 +299,39 @@
     padding: 5px;
     overflow: hidden;
 }
+
+.upload-last-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.upload-last-text {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    text-align: center;
+    color: #6c6c6c;
+    width: 100%;
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size:14px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+}
+
+.upload-last-btn {
+    width: 249px;
+    height: 39px;
+    background-color: #7966a3;
+    border: none;
+    margin-top: 154px;
+}
+
+.upload-last-btnText {
+    font-family: "나눔스퀘어",NanumSquareR;
+    font-size: 16px;
+    text-align: center;
+    color: #b4b4b5;
+}
