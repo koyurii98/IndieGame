@@ -91,3 +91,8 @@ input {
     color: #b4b4b5;
     font-weight: bold;
 }
+
+.insert-regSpan {
+    font-size: 12px;
+    color: red;
+}

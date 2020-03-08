@@ -17,7 +17,7 @@ router.get('/one', async(req,res,next) => {
     try {
         const result = await User.findOne({
             where : {
-                id : req.query.id,
+                userId : req.query.userId,
             }
         });
         res.send(result);
@@ -35,6 +35,10 @@ router.post('/insert', async(req,res,next) => {
             },
             default : {
                 userId : req.body.userId,
+                userPass : req.body.userPass,
+                userEmail : req.body.userEmail,
+                userPhone : req.body.userPhone,
+                userNum : req.body.userNum,
             }
         })
     } catch(err) {
@@ -55,7 +59,7 @@ router.put('/update', async(req,res,next) => {
             userNum : req.body.userNum,
             },{
             where : {
-                id : req.body.id,
+                userId : req.body.userId,
             },
         });
     } catch(err) {
@@ -70,7 +74,7 @@ router.delete('/delete', async(req,res,next) => {
     try {
         await User.destroy({
             where : {
-                id : req.query.id,
+                userId : req.query.userId,
             }
         });
     } catch(err) {

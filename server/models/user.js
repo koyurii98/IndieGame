@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
         userNum: {
-            type: DataTypes.DOUBLE,
+            type: DataTypes.STRING,
             allowNull: false
         },
     });
