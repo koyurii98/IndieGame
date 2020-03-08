@@ -115,14 +115,18 @@ class Insert extends React.Component {
                 alert("이미 존재하는 아이디 입니다.");
                 return;
             }
-            await axios.post("http://localhost:5000/users/insert",{
+            const userCreate = await axios.post("http://localhost:5000/users/insert", {
                 userId : id,
                 userPass : pw,
                 userEmail : email,
                 userPhone : phoneNum,
                 userNum : userNum1 + userNum2,
             })
-            console.log("user insert create success : " + id, pw)
+            if(userCreate.data){
+                console.log("user insert create success : " + id, pw)
+            } else {
+                console.log("user insert create fail");
+            }
         } catch (err) {
             console.log("user insert create err : " + err);
         }

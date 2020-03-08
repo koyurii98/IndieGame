@@ -59,7 +59,7 @@ router.put('/update', async(req,res,next) => {
             userNum : req.body.userNum,
             },{
             where : {
-                id : req.body.id,
+                userId : req.body.userId,
             },
         });
     } catch(err) {
@@ -74,7 +74,7 @@ router.delete('/delete', async(req,res,next) => {
     try {
         await User.destroy({
             where : {
-                id : req.query.id,
+                userId : req.query.userId,
             }
         });
     } catch(err) {
