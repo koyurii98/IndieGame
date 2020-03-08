@@ -29,11 +29,12 @@ router.get('/one', async(req,res,next) => {
 router.post('/insert', async(req,res,next) => {
     let result = true;
     try {
+        console.log(req.body)
         await User.findOrCreate({
             where : {
                 userId : req.body.userId,
             },
-            default : {
+            defaults : {
                 userId : req.body.userId,
                 userPass : req.body.userPass,
                 userEmail : req.body.userEmail,
