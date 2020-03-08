@@ -4,6 +4,7 @@ import Resource from './Resource';
 import { BrowserRouter as Router,Route,Link } from 'react-router-dom';
 import Upload from './Upload';
 import Info from './Info'
+import Lastupload from './Lastupload';
 
 class Basepload extends React.Component {
     constructor(props){
@@ -41,6 +42,13 @@ class Basepload extends React.Component {
                 titleClassName1 : "upload-game",
                 titleClassName2 : "upload-game-active",
                 titleClassName3 : "upload-game",
+            });
+            break;
+            case 3 : this.setState({
+                titleClassName0 : "upload-game",
+                titleClassName1 : "upload-game",
+                titleClassName2 : "upload-game",
+                titleClassName3 : "upload-game-active",
             });
             break;
         }
@@ -85,6 +93,9 @@ class Basepload extends React.Component {
                         <Route path="/upload/info">
                             <Info></Info>
                         </Route>
+                        <Route path="/upload/lastupload">
+                            <Lastupload></Lastupload>
+                        </Route>
                     </div>
                 </div>
                 <Route exact path="/upload">
@@ -102,6 +113,12 @@ class Basepload extends React.Component {
                 <Route path="/upload/info">
                     <div className="upload-buttons">
                         <Link to="/upload/resource"><button className="Previousbtn" onClick={this.clickPreNexBtn.bind(this,1)}>이전</button></Link>
+                        <Link to="/upload/lastupload"><button className="nextbtn" onClick={this.clickPreNexBtn.bind(this,3)}>다음</button></Link>
+                    </div>
+                </Route>
+                <Route path="/upload/lastupload">
+                    <div className="upload-buttons">
+                        <Link to="/upload/info"><button className="Previousbtn" onClick={this.clickPreNexBtn.bind(this,2)}>이전</button></Link>
                     </div>
                 </Route>
             </div>

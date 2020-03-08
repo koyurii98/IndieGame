@@ -17,7 +17,7 @@ router.get('/one', async(req,res,next) => {
     try {
         const result = await User.findOne({
             where : {
-                id : req.query.id,
+                userId : req.query.userId,
             }
         });
         res.send(result);
@@ -35,6 +35,10 @@ router.post('/insert', async(req,res,next) => {
             },
             default : {
                 userId : req.body.userId,
+                userPass : req.body.userPass,
+                userEmail : req.body.userEmail,
+                userPhone : req.body.userPhone,
+                userNum : req.body.userNum,
             }
         })
     } catch(err) {
