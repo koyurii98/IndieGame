@@ -122,6 +122,7 @@ class Insert extends React.Component {
                 userPhone : phoneNum,
                 userNum : userNum1 + userNum2,
             })
+            alert("가입되었습니다.");
             if(userCreate.data){
                 console.log("user insert create success : " + id, pw)
             } else {
