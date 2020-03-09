@@ -6,7 +6,7 @@ import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
 import Baseupload from './game_upload/js/Base_upload';
-
+import axios from 'axios';
 
 class Base extends React.Component {
     constructor(props){
@@ -27,6 +27,7 @@ class Base extends React.Component {
             })
         }
     }
+
     render() {
         const { loginBtn } = this.state;
         return (
@@ -39,8 +40,8 @@ class Base extends React.Component {
                                 <div className="base-loginClose"><span className="base-loginCloseText" onClick={this.clickLoginBtn.bind(this)}>X</span></div>
                                 <div className="base-loginLogin"><span className="base-loginLoginText">LOGIN</span></div>
                                 <div className="base-loginPopMini">
-                                    <input type="text" className="login-id" placeholder="아이디"></input>
-                                    <input type="password" className="login-pass" placeholder="비밀번호"></input>
+                                    <input type="text"  className="login-id" placeholder="아이디"></input>
+                                    <input type="password"  className="login-pass" placeholder="비밀번호"></input>
                                     <button className="login-btn"><span className="login-btnText">로그인</span></button>
                                     <div className="login-etc">
                                         <div className="login-etc-etc">
