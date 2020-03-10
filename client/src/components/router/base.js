@@ -7,7 +7,7 @@ import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
 import Baseupload from './game_upload/js/Base_upload';
-
+import axios from 'axios';
 
 class Base extends React.Component {
     constructor(props){
