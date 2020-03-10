@@ -46,7 +46,6 @@ input {
     color: #b4b4b5;
     height:33px;
     width: 245px;
-    margin-top: 5px;
     font-size:13pt;
     padding-left: 5px;
 }
@@ -58,7 +57,7 @@ input {
 .insert-box-content{
     width: 260px;
     height: 100px;
-        color:#b4b4b5;
+    color:#b4b4b5;
     font-size: 16px;
 }
 
@@ -66,11 +65,11 @@ input {
     width: 112px;
 }
 
-.insert-input-phoneck{
+.insert-input-phoneck,.insert-input-idck {
     width: 152px;
 }
 
-.insert-phonech-btn{
+.insert-phonech-btn,.insert-idck-btn{
     background-color:#7966a3;
     border: none;
     width: 91px;
@@ -79,6 +78,7 @@ input {
     font-family: "나눔스퀘어",NanumSquareR;
     font-size: 13px;
     color: #b4b4b5;
+
 }
 .insert-btn{
     width: 252px;

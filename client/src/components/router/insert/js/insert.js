@@ -23,6 +23,7 @@ class Insert extends React.Component {
             nameStyle : "none",
             userNumStyle : "none",
             phoneNumStyle : "none",
+            idCk : "none",
         }
     }
 
@@ -110,11 +111,6 @@ class Insert extends React.Component {
             return;
         }
         try {
-            const result = await axios.get(`http://localhost:5000/users/one?userId=${id}`);
-            if(result.data){
-                alert("이미 존재하는 아이디 입니다.");
-                return;
-            }
             const userCreate = await axios.post("http://localhost:5000/users/insert", {
                 userId : id,
                 userPass : pw,
@@ -132,11 +128,26 @@ class Insert extends React.Component {
             console.log("user insert create err : " + err);
         }
     }
+        id(){
+        const idck = this.InsertCheck.id
+       const result = axios.get(`http://localhost:5000/users/all?userId=${idck}`);
+        if(result.data){
+            console.log("아이디사용불가");
+            alert("불가");
+            return; 
+        }else{
+            console.log("아이디사용가능");
+            alert("가능");
+      
+            }
+        }
+        
+    
     render (){
         const { 
             idStyle,pwStyle,pwckStyle,
             emailStyle,nameStyle,userNumStyle,
-            phoneNumStyle 
+            phoneNumStyle
         } = this.state;
         return (
             <div className="insert-mainDiv">
@@ -152,7 +163,8 @@ class Insert extends React.Component {
                             <div>
                                 <span>아이디</span>
                             </div>
-                            <input type="text" name="id"placeholder="6~12 영문+숫자" onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="text" name="id"placeholder="6~12 영문+숫자" className="insert-input-idck"onChange={this.handleChangeInput.bind(this)}></input>
+                            <button className="insert-idck-btn" onClick={this.id.bind(this)}>중복확인</button>
                             <span style={{
                                 display : idStyle,
                                 padding : '5px'
@@ -187,7 +199,7 @@ class Insert extends React.Component {
                         </div>
                         <div className="insert-box-content">
                             <span>이메일</span>
-                            <input type="text"  name="email"placeholder="ex)abc@indiegame.com" onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="text"  name="email"placeholder="ex) abc@indiegame.com" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : emailStyle,
                                 padding : '5px'
