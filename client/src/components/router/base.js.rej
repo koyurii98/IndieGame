@@ -1,0 +1,35 @@
+diff a/client/src/components/router/base.js b/client/src/components/router/base.js	(rejected hunks)
+@@ -31,8 +31,32 @@
+             })
+         }
+     }
++    async loginChecked() {
++        const { id,pass } = this.state;
++        try {
++            const result = await axios.post("http://localhost:5000/users/verify",{
++                userId : id,
++                userPass : pass,
++            });
++            if(result.data){
++                alert("로그인 되었습니다.");
++                this.setState({
++                    loginBtn : false
++                })
++            } else {
++                alert("아이디 또는 비밀번호가 다릅니다.");
++            }
++        } catch(err) {
++            console.log("user login err : " + err);
++        }
++    }
++    onChangeInputLogin(e) {
++        this.setState({
++            [e.target.name] : e.target.value,
++        })
++    }
+     render() {
+-        const { loginBtn } = this.state;
++        const { loginBtn,id,pass } = this.state;
+         return (
+             <div className="base-div">
+                 <Router>

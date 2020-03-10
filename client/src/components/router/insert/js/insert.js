@@ -23,6 +23,7 @@ class Insert extends React.Component {
             nameStyle : "none",
             userNumStyle : "none",
             phoneNumStyle : "none",
+            idCk : "none",
         }
     }
 
@@ -110,11 +111,6 @@ class Insert extends React.Component {
             return;
         }
         try {
-            const result = await axios.get(`http://localhost:5000/users/one?userId=${id}`);
-            if(result.data){
-                alert("이미 존재하는 아이디 입니다.");
-                return;
-            }
             const userCreate = await axios.post("http://localhost:5000/users/insert", {
                 userId : id,
                 userPass : pw,
@@ -132,11 +128,26 @@ class Insert extends React.Component {
             console.log("user insert create err : " + err);
         }
     }
+        id(){
+        const idck = this.InsertCheck.id
+       const result = axios.get(`http://localhost:5000/users/all?userId=${idck}`);
+        if(result.data){
+            console.log("아이디사용불가");
+            alert("불가");
+            return; 
+        }else{
+            console.log("아이디사용가능");
+            alert("가능");
+      
+            }
+        }
+        
+    
     render (){
         const { 
             idStyle,pwStyle,pwckStyle,
             emailStyle,nameStyle,userNumStyle,
-            phoneNumStyle 
+            phoneNumStyle
         } = this.state;
         return (
             <div className="insert-mainDiv">
@@ -151,28 +162,31 @@ class Insert extends React.Component {
                         <div className="insert-box-content">
                             <div>
                                 <span>아이디</span>
-                                <span> 6~12 영문+숫자</span>
                             </div>
-                            <input type="text" name="id" onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="text" name="id"placeholder="6~12 영문+숫자" className="insert-input-idck"onChange={this.handleChangeInput.bind(this)}></input>
+                            <button className="insert-idck-btn" onClick={this.id.bind(this)}>중복확인</button>
                             <span style={{
                                 display : idStyle,
-                            }} className="insert-regSpan">*아이디를 양식에 맞게 입력하여 주세요.</span>
+                                padding : '5px'
+                            }} className="insert-regSpan">*아이디는 6~12 영문+숫자로 구성해주세요.</span>
                         </div>
                         <div className="insert-box-content">
                             <div>
                                 <span>비밀번호</span>
-                                <span> 8~12 영문+숫자+특수문자</span>
                             </div>
-                            <input type="password" name="pw" onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="password" name="pw" className="insert-pw" placeholder="8~12 영문+숫자+특수문자" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : pwStyle,
-                            }} className="insert-regSpan">*비밀번호를 양식에 맞게 입력하여 주세요.</span>
+                                padding : '5px'
+                            }} className="insert-regSpan">*비밀번호는 8~12자리의 영문+숫자+특수문자로 구성해주세요.</span>
                         </div>
                         <div className="insert-box-content">
                             <span>비밀번호 확인</span>
                             <input type="password"  name="pwck" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : pwckStyle,
+                                padding : '5px'
+                            
                             }} className="insert-regSpan">*비밀번호를 확인해주세요.</span>
                         </div>
                         <div className="insert-box-content">
@@ -180,13 +194,15 @@ class Insert extends React.Component {
                             <input type="text" name="name" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : nameStyle,
+                                padding : '5px'
                             }} className="insert-regSpan">*이름을 양식에 맞게 입력하여 주세요.</span>
                         </div>
                         <div className="insert-box-content">
                             <span>이메일</span>
-                            <input type="text"  name="email" onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="text"  name="email"placeholder="ex) abc@indiegame.com" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : emailStyle,
+                                padding : '5px'
                             }} className="insert-regSpan">*이메일을 양식에 맞게 입력하여 주세요.</span>
                         </div>
                         <div className="insert-box-content">
@@ -196,13 +212,15 @@ class Insert extends React.Component {
                             <input type="text"className="insert-input-usernumber" name="userNum2" onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : userNumStyle,
+                                padding : '5px'
                             }} className="insert-regSpan">*주민번호를 다시 입력하여 주세요.</span>
                         </div>
                         <div className="insert-box-content">
                             <span>휴대폰번호</span>
-                            <input type="text" name="phoneNum"onChange={this.handleChangeInput.bind(this)}></input>
+                            <input type="text"placeholder="ex)01012341234" name="phoneNum"onChange={this.handleChangeInput.bind(this)}></input>
                             <span style={{
                                 display : phoneNumStyle,
+                                padding : '5px'
                             }} className="insert-regSpan">*휴대폰 번호를 다시 입력하여 주세요.</span>
                         </div>
                         <div className="insert-box-content">
