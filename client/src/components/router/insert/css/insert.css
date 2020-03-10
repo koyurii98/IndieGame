@@ -58,8 +58,7 @@ input {
 .insert-box-content{
     width: 260px;
     height: 100px;
-    object-fit: contain;
-    color:#b4b4b5;
+        color:#b4b4b5;
     font-size: 16px;
 }
 
@@ -83,7 +82,7 @@ input {
 }
 .insert-btn{
     width: 252px;
-    height:33px;
+    height:35px;
     background-color:#7966a3;
     border: none;
     font-family: "나눔스퀘어",NanumSquareR;
