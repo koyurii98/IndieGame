@@ -7,7 +7,7 @@ import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
 import Detail from './detail/js/detail';
 import Baseupload from './game_upload/js/Base_upload';
-
+import axios from 'axios';
 
 class Base extends React.Component {
     constructor(props){
@@ -31,6 +31,7 @@ class Base extends React.Component {
             })
         }
     }
+<<<<<<< HEAD
     async loginChecked() {
         const { id,pass } = this.state;
         try {
@@ -55,6 +56,9 @@ class Base extends React.Component {
             [e.target.name] : e.target.value,
         })
     }
+=======
+
+>>>>>>> 74095955ca351f37e98c744219cad15ad77ca05e
     render() {
         const { loginBtn,id,pass } = this.state;
         return (
@@ -67,9 +71,15 @@ class Base extends React.Component {
                                 <div className="base-loginClose"><span className="base-loginCloseText" onClick={this.clickLoginBtn.bind(this)}>X</span></div>
                                 <div className="base-loginLogin"><span className="base-loginLoginText">LOGIN</span></div>
                                 <div className="base-loginPopMini">
+<<<<<<< HEAD
                                     <input type="text" name="id" onChange={this.onChangeInputLogin.bind(this)} value={id} className="login-id" placeholder="아이디"></input>
                                     <input type="password" name="pass" onChange={this.onChangeInputLogin.bind(this)} value={pass} className="login-pass" placeholder="비밀번호"></input>
                                     <button className="login-btn" onClick={this.loginChecked.bind(this)}><span className="login-btnText">로그인</span></button>
+=======
+                                    <input type="text"  className="login-id" placeholder="아이디"></input>
+                                    <input type="password"  className="login-pass" placeholder="비밀번호"></input>
+                                    <button className="login-btn"><span className="login-btnText">로그인</span></button>
+>>>>>>> 74095955ca351f37e98c744219cad15ad77ca05e
                                     <div className="login-etc">
                                         <div className="login-etc-etc">
                                             <input type="checkbox" className="login-ch"></input>
