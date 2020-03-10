@@ -23,6 +23,8 @@ class Insert extends React.Component {
             nameStyle : "none",
             userNumStyle : "none",
             phoneNumStyle : "none",
+            // id 중복 체크를 위한 state
+            idCheck : false,
         }
     }
 
@@ -32,7 +34,7 @@ class Insert extends React.Component {
         })
     }
     async InsertCheck() {
-        const { id,pw,pwck,email,name,userNum1,userNum2,phoneNum } = this.state;
+        const { id,pw,pwck,email,name,userNum1,userNum2,phoneNum,idCheck } = this.state;
         let count = 0;
         if(!(/^[a-z0-9A-Z]{6,12}$/.test(id))) {
             this.setState({
@@ -105,6 +107,10 @@ class Insert extends React.Component {
                 phoneNumStyle : "none",
             })
         }
+        if(!idCheck){
+            alert("ID 중복 체크를 해주세요.");
+            return;
+        }
         if(count > 0) {
             count = 0;
             return;
@@ -112,7 +118,10 @@ class Insert extends React.Component {
         try {
             const result = await axios.get(`http://localhost:5000/users/one?userId=${id}`);
             if(result.data){
-                alert("이미 존재하는 아이디 입니다.");
+                alert("이미 존재하는 아이디 입니다. 다시 확인해주세요.");
+                this.setState({
+                    idCheck : false,
+                })
                 return;
             }
             const userCreate = await axios.post("http://localhost:5000/users/insert", {
@@ -131,6 +140,27 @@ class Insert extends React.Component {
         } catch (err) {
             console.log("user insert create err : " + err);
         }
+    }
+    async idCheckedBtn() {
+        const result = await axios.get(`http://localhost:5000/users/one?userId=${this.state.id}`);
+        if(result.data){
+            alert("이미 존재하는 아이디 입니다.");
+            return;
+        }
+        if(!(/^[a-z0-9A-Z]{6,12}$/.test(this.state.id))) {
+            this.setState({
+                idStyle : "flex",
+            })
+            return;
+        } else {
+            this.setState({
+                idStyle : "none",
+            })
+        }
+        alert("사용 가능한 ID 입니다.");
+        this.setState({
+            idCheck : true,
+        })
     }
     render (){
         const { 
@@ -152,7 +182,10 @@ class Insert extends React.Component {
                             <div>
                                 <span>아이디</span>
                             </div>
-                            <input type="text" name="id"placeholder="6~12 영문+숫자" onChange={this.handleChangeInput.bind(this)}></input>
+                            <div className="insert-idChecked">
+                                <input type="text" name="id"placeholder="6~12 영문+숫자" onChange={this.handleChangeInput.bind(this)}></input>
+                                <button className="insert-idCheckedBtn" onClick={this.idCheckedBtn.bind(this)}>중복체크</button>
+                            </div>
                             <span style={{
                                 display : idStyle,
                                 padding : '5px'
