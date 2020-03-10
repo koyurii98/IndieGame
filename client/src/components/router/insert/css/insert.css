@@ -45,33 +45,31 @@ input {
     border: none;
     color: #b4b4b5;
     height:33px;
-    width: 247px;
-    margin-top: 5px;
-    font-size:14px;
+    width: 245px;
+    font-size:13pt;
+    padding-left: 5px;
 }
 .insert-box{
     width: 249px;
-    height: 751px;
     object-fit: contain;
 }
 
 .insert-box-content{
-    width: 247px;
-    height: 90px;
-    object-fit: contain;
+    width: 260px;
+    height: 100px;
     color:#b4b4b5;
     font-size: 16px;
 }
 
 .insert-input-usernumber{
-    width: 115px;
+    width: 112px;
 }
 
-.insert-input-phoneck{
+.insert-input-phoneck,.insert-input-idck {
     width: 152px;
 }
 
-.insert-phonech-btn{
+.insert-phonech-btn,.insert-idck-btn{
     background-color:#7966a3;
     border: none;
     width: 91px;
@@ -80,10 +78,11 @@ input {
     font-family: "나눔스퀘어",NanumSquareR;
     font-size: 13px;
     color: #b4b4b5;
+
 }
 .insert-btn{
-    width: 247px;
-    height:33px;
+    width: 252px;
+    height:35px;
     background-color:#7966a3;
     border: none;
     font-family: "나눔스퀘어",NanumSquareR;
@@ -95,4 +94,10 @@ input {
 .insert-regSpan {
     font-size: 12px;
     color: red;
+}
+input[type="password"]
+{ font-size: 20pt;}
+
+::placeholder{
+    font-size: 10pt;
 }
