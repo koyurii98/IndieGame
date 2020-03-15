@@ -1,0 +1,43 @@
+.main-mainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-SliderDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-SliderboxDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slider-leftBox {
+    border: 1px solid white;
+    width: 303px;
+    height: 212px;
+}
+
+.Slider-centerBox {
+    border: 1px solid white;
+    width: 389px;
+    height: 271px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.Slider-rightBox {
+    border: 1px solid white;
+    width: 303px;
+    height: 212px;
+}
+
+.Slider-ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
