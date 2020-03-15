@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 let models = require("../models");
+let jwt = require("jsonwebtoken");
+let configs = require("../bin/config")
 
 let User = models.user;
 
@@ -27,7 +29,7 @@ router.get('/one', async(req,res,next) => {
 });
 
 router.post('/verify', async(req,res,next) => {
-    let verifyUsers = false;
+    let verifyUsers = null;
     try {
         const result = await User.findOne({
             where : {
@@ -35,13 +37,22 @@ router.post('/verify', async(req,res,next) => {
             }
         });
         if(result.dataValues && result.dataValues.userPass === req.body.userPass) {
-            verifyUsers = true;
+            verifyUsers = getToken(result.dataValues);
         }
     } catch(err) {
         console.log("users one err : " + err)
     }
     res.send(verifyUsers);
 });
+
+function getToken(data){
+    try {
+        const getToken = jwt.sign({ userId : data.userId, }, configs.secretKey, { expiresIn : '1m' });
+        return getToken;
+    } catch(err) {
+        console.log("token sign err : " + err);
+    }
+}
 
 router.post('/insert', async(req,res,next) => {
     let result = true;
