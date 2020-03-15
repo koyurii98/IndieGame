@@ -85,4 +85,3 @@ router.delete('/delete', async(req,res,next) => {
     res.send(result);
 });
 
-module.exports = router;
