@@ -46,7 +46,6 @@ class Base extends React.Component {
                 userId : id,
                 userPass : pass,
             });
-<<<<<<< HEAD
             // 조회 성공하여 데이터가 있을 경우 -> 토큰 값을 해시 함수로 전달 받음
             if(result.data) {
                 // 토큰 값 얻기 위한 api 호출
@@ -71,11 +70,6 @@ class Base extends React.Component {
                     alert("로그인 과정에서 오류가 발생하여 다시 로그인 하여주세요.");
                 }
                 // 팝업 창 내리기
-=======
-            if(result.data){
-                console.log(result.data);
-                alert("로그인 되었습니다.");
->>>>>>> origin/yuri
                 this.setState({
                     loginBtn : false
                 })
