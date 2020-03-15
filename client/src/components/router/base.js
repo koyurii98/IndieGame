@@ -1,7 +1,6 @@
 import React from 'react';
 import './base.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import axios from 'axios';
 import Main from './main/js/main';
 import Pc from './pc/js/pc';
 import Insert from './insert/js/insert';
@@ -13,9 +12,6 @@ class Base extends React.Component {
         super(props);
         this.state = {
             loginBtn : false,
-            userData : [],
-            id : "",
-            pass : "",
         }
     }
     clickLoginBtn() {
@@ -30,6 +26,7 @@ class Base extends React.Component {
             })
         }
     }
+<<<<<<< HEAD
     async loginChecked() {
         const { id,pass } = this.state;
         try {
@@ -54,8 +51,10 @@ class Base extends React.Component {
             [e.target.name] : e.target.value,
         })
     }
+=======
+>>>>>>> 6c7e35332604b37692d8bacaaaec6a16ef210089
     render() {
-        const { loginBtn,id,pass } = this.state;
+        const { loginBtn } = this.state;
         return (
             <div className="base-div">
                 <Router>
@@ -66,15 +65,21 @@ class Base extends React.Component {
                                 <div className="base-loginClose"><span className="base-loginCloseText" onClick={this.clickLoginBtn.bind(this)}>X</span></div>
                                 <div className="base-loginLogin"><span className="base-loginLoginText">LOGIN</span></div>
                                 <div className="base-loginPopMini">
+<<<<<<< HEAD
                                     <input type="text" name="id" onChange={this.onChangeInputLogin.bind(this)} value={id} className="login-id" placeholder="아이디"></input>
                                     <input type="password" name="pass" onChange={this.onChangeInputLogin.bind(this)} value={pass} className="login-pass" placeholder="비밀번호"></input>
                                     <button className="login-btn" onClick={this.loginChecked.bind(this)}><span className="login-btnText">로그인</span></button>
+=======
+                                    <input type="text" className="login-id" placeholder="아이디"></input>
+                                    <input type="password" className="login-pass" placeholder="비밀번호"></input>
+                                    <button className="login-btn"><span className="login-btnText">로그인</span></button>
+>>>>>>> 6c7e35332604b37692d8bacaaaec6a16ef210089
                                     <div className="login-etc">
                                         <div className="login-etc-etc">
                                             <input type="checkbox" className="login-ch"></input>
                                             <span className="login-etcSave">아이디저장</span>
                                         </div>
-                                        <Link to="/user" className="login-etcIdPass">아이디/비밀번호 찾기</Link>
+                                        <Link className="login-etcIdPass">아이디/비밀번호 찾기</Link>
                                     </div>
                                 </div>
                             </div>
