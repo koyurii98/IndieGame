@@ -38,6 +38,7 @@ class Base extends React.Component {
                 userPass : pass,
             });
             if(result.data){
+                console.log(result.data);
                 alert("로그인 되었습니다.");
                 this.setState({
                     loginBtn : false
@@ -66,7 +67,7 @@ class Base extends React.Component {
                                 <div className="base-loginClose"><span className="base-loginCloseText" onClick={this.clickLoginBtn.bind(this)}>X</span></div>
                                 <div className="base-loginLogin"><span className="base-loginLoginText">LOGIN</span></div>
                                 <div className="base-loginPopMini">
-                                <input type="text" name="id" onChange={this.onChangeInputLogin.bind(this)} value={id} className="login-id" placeholder="아이디"></input>
+                                    <input type="text" name="id" onChange={this.onChangeInputLogin.bind(this)} value={id} className="login-id" placeholder="아이디"></input>
                                     <input type="password" name="pass" onChange={this.onChangeInputLogin.bind(this)} value={pass} className="login-pass" placeholder="비밀번호"></input>
                                     <button className="login-btn" onClick={this.loginChecked.bind(this)}><span className="login-btnText">로그인</span></button>
                                     <div className="login-etc">

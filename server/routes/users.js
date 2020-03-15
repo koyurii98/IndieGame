@@ -26,6 +26,23 @@ router.get('/one', async(req,res,next) => {
     }
 });
 
+router.post('/verify', async(req,res,next) => {
+    let verifyUsers = null;
+    try {
+        const result = await User.findOne({
+            where : {
+                userId : req.body.userId,
+            }
+        });
+        if(result.dataValues && result.dataValues.userPass === req.body.userPass) {
+            verifyUsers = result.dataValues;
+        }
+    } catch(err) {
+        console.log("users one err : " + err)
+    }
+    res.send(verifyUsers);
+});
+
 router.post('/insert', async(req,res,next) => {
     let result = true;
     try {
@@ -85,3 +102,4 @@ router.delete('/delete', async(req,res,next) => {
     res.send(result);
 });
 
+module.exports = router;

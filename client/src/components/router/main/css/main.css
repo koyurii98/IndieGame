@@ -3,44 +3,6 @@
     flex-direction: column;
 }
 
-.main-titleDiv {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-boxDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-leftBox {
-    border: 1px solid white;
-    width: 303px;
-    height: 212px;
-}
-
-.main-centerBox {
-    border: 1px solid white;
-    width: 389px;
-    height: 271px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-.main-rightBox {
-    border: 1px solid white;
-    width: 303px;
-    height: 212px;
-}
-
-.main-ul {
-    list-style: circle;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 li {
     padding-left: 7px;
